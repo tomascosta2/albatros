@@ -16,18 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('WP_CACHE', true);
-define( 'WPCACHEHOME', '/home/dh_8gx45p/albatrosspa.com/wp-content/plugins/wp-super-cache/' );
-define('DB_NAME', 'albatrosspa_com');
+define('DB_NAME', 'albatrosdb');
 
 /** MySQL database username */
-define('DB_USER', 'albatrosspacom');
+define('DB_USER', 'albatrosdb');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'xACST8AD');
+define('DB_PASSWORD', 'albatrosdb');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql.albatrosspa.com');
+define('DB_HOST', 'database');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

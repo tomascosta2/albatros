@@ -1,23 +1,455 @@
 <?php get_header(); ?>
 
-<!-- Hero -->
-<section class="bg-red-500 py-[100px]">
-	<div>
-		<h1>Titulo</h1>
-		<p>Bajada</p>
+<!-- Carrusel -->
+<section>
+	<div class="swiper w-full h-[450px] relative">
+		<div class="swiper-wrapper max-h-full">
+			<!-- Slide 1 -->
+			<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
+				<div class="tcp-container">
+					<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
+						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">Cambiar y Estrategia
+							con visión global</h2>
+						<a class="al-btn mt-4" href="#">CTA</a>
+					</div>
+				</div>
+			</div>
+			<!-- Slide 1 -->
+			<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
+				<div class="tcp-container">
+					<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
+						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">Cambiar y Estrategia
+							con visión global</h2>
+						<a class="al-btn" href="#">CTA</a>
+					</div>
+				</div>
+			</div>
+			<!-- Slide 1 -->
+			<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
+				<div class="tcp-container">
+					<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
+						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">Cambiar y Estrategia
+							con visión global</h2>
+						<a class="al-btn" href="#">CTA</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Paginación y flechas -->
+		<div class="swiper-pagination"></div>
+		<!-- <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div> -->
 	</div>
-	<img class="size-[100px] bg-red-500" src="" alt="">
 </section>
 <section>
-	<h2></h2>
-	<div>
-		<div>
-			Texto
+	<div class="tcp-container">
+		<div class="bg-[#060082] p-[60px] rounded-br-[40px] rounded-bl-[40px]">
+			<div class="max-w-[800px] mx-auto flex flex-col md:flex-row items-baseline gap-12">
+				<div class="w-fit mx-auto">
+					<p
+						class="md:mx-0 w-fit leading-[155px] text-white font-extrabold tracking-tighter text-[190px]">
+						+10</p>
+					<p
+						class="md:mx-0 w-fit leading-[110px] -mt-[15px] text-[#54C4D2] font-extrabold tracking-tighter text-[140px]">
+						años</p>
+					<p
+						class="md:mx-0 w-fit leading-[130%] text-[#FFCC00] font-extrabold tracking-tighter text-[22px]">
+						ayudando a grandes empresas</p>
+				</div>
+				<p class="text-white">
+					Más de 10 años potenciando a grandes empresas a través de soluciones en abastecimiento
+					estratégico, gestión de gastos y consultorías. Generamos ahorros significativos, mejoramos el
+					EBITDA y elevamos la competitividad, aplicando metodologías de clase mundial adaptadas a cada
+					cliente.
+				</p>
+			</div>
 		</div>
-		<img class="size-[100px] bg-red-500" src="" alt="">
 	</div>
 </section>
 
-<!-- Sobre nosotros -->
+<section class="py-[80px]">
+	<div class="tcp-container --lightblue">
+		<h3 class="al-title mb-12"><span>Nosotros</span></h3>
+		<div class="grid md:grid-cols-3 gap-10">
+			<div class="shadow-xl p-8">
+				<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">+25</p>
+				<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">años</p>
+				<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">de experiencia
+					profesional</p>
+			</div>
+			<div class="shadow-xl p-8">
+				<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">+25</p>
+				<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">años</p>
+				<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">de experiencia
+					profesional</p>
+			</div>
+			<div class="shadow-xl p-8">
+				<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">+25</p>
+				<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">años</p>
+				<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">de experiencia
+					profesional</p>
+			</div>
+		</div>
+		<div class="p-8 bg-[#54C4D2] mt-8">
+			<h2 class="text-white text-[60px] font-medium text-center">Gestión de proyectos por</h2>
+			<p class="text-[#060082] font-extrabold text-center leading-[120px] text-[130px]">+US$ 235 MM</p>
+		</div>
+		<p class="text-[#52525B] text-[20px] leading-[28px] mt-8 max-w-[970px] mx-auto text-justify">
+			Equipo con más de 25 años de experiencia en gestión de costos y estrategia, logrando ahorros promedio
+			del 16%. Aplicamos un análisis riguroso, negociación experta y total transparencia en cada etapa del
+			proceso. Generamos confianza a través de resultados medibles y control total para nuestros clientes.
+		</p>
+	</div>
+</section>
+<section>
+	<div class="tcp-container">
+		<h3 class="al-title --double-line --green mb-12"><span>Productos y Servicios</span></h3>
+		<!-- Duplicar con repeater y que se puedan cambiar los colores -->
+		<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
+			<div class="flex mb-2 gap-4 items-baseline">
+				<img class="size-[93px] object-fit bg-gray-200" src="" alt="">
+				<h2 class="text-white text-[60px] font-medium">Plan de ahorro estratégico</h2>
+			</div>
+			<p class="text-white text-[18px] leading-[20px] text-justify">
+				Nuestro Plan de Ahorro Estratégico identifica oportunidades de ahorro mediante un análisis profundo
+				de los costos de la empresa. Diseñamos e implementamos estrategias para optimizar recursos,
+				renegociar contratos y mejorar la rentabilidad. Trabajamos con empresas de gran tamaño, aplicando un
+				enfoque basado en datos y alta especialización. El resultado: mayor eficiencia financiera,
+				competitividad en el mercado y capacidad de reinversión para el crecimiento.
+			</p>
+		</div>
+		<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
+			<div class="flex mb-2 gap-4 items-baseline">
+				<img class="size-[93px] object-fit bg-gray-200" src="" alt="">
+				<h2 class="text-white text-[60px] font-medium">Plan de ahorro estratégico</h2>
+			</div>
+			<p class="text-white text-[18px] leading-[20px] text-justify">
+				Nuestro Plan de Ahorro Estratégico identifica oportunidades de ahorro mediante un análisis profundo
+				de los costos de la empresa. Diseñamos e implementamos estrategias para optimizar recursos,
+				renegociar contratos y mejorar la rentabilidad. Trabajamos con empresas de gran tamaño, aplicando un
+				enfoque basado en datos y alta especialización. El resultado: mayor eficiencia financiera,
+				competitividad en el mercado y capacidad de reinversión para el crecimiento.
+			</p>
+		</div>
+		<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
+			<div class="flex mb-2 gap-4 items-baseline">
+				<img class="size-[93px] object-fit bg-gray-200" src="" alt="">
+				<h2 class="text-white text-[60px] font-medium">Plan de ahorro estratégico</h2>
+			</div>
+			<p class="text-white text-[18px] leading-[20px] text-justify">
+				Nuestro Plan de Ahorro Estratégico identifica oportunidades de ahorro mediante un análisis profundo
+				de los costos de la empresa. Diseñamos e implementamos estrategias para optimizar recursos,
+				renegociar contratos y mejorar la rentabilidad. Trabajamos con empresas de gran tamaño, aplicando un
+				enfoque basado en datos y alta especialización. El resultado: mayor eficiencia financiera,
+				competitividad en el mercado y capacidad de reinversión para el crecimiento.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="py-[80px]">
+	<div class="tcp-container">
+		<h3 class="al-title mb-12"><span>Estamos listos para atenderte</span></h3>
+		<form action="/" class="bg-white shadow-[0px_0px_35px_#11111130] p-1 flex max-w-[617px] mx-auto rounded-lg">
+			<input class="outline-none p-4 w-full" placeholder="Introduce tu dirección de correo electrónico"
+				type="text">
+			<button class="text-white font-semibold py-2 px-8 rounded-lg bg-[#4CAF4F]">Contáctanos</button>
+		</form>
+	</div>
+</section>
+
+<section class="py-[80px]">
+	<div class="tcp-container">
+		<div class="bg-white rounded-[20px] py-10 px-16 shadow-[0px_0px_35px_#11111130]">
+			<div class="swiper logo-swiper">
+				<div class="swiper-wrapper items-center">
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+					<!-- Logo 1 -->
+					<div class="swiper-slide flex justify-center items-center">
+						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
+							class="h-16 object-contain" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="pt-[80px] pb-[100px] bg-[#FAFAFA] rounded-[40px]">
+	<div class="tcp-container relative">
+		<h3 class="al-title --green mb-12"><span>Casos de Éxito</span></h3>
+		<div class="swiper casos-swiper rounded-[20px] shadow-[0px_0px_35px_#11111130]">
+			<div class="swiper-wrapper items-center">
+				<div class="swiper-slide">
+					<div class="bg-white py-8 px-12 rounded-[20px]">
+						<div class="flex items-center justify-between">
+							<div class="text-center">
+								<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
+								<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]">33%</span>
+							</div>
+							<div class="text-center">
+								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Proceso<br> en meses
+								</h4>
+								<span
+									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#54C4D2]">03</span>
+							</div>
+							<div class="text-center">
+								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Contrato<br> en meses
+								</h4>
+								<span
+									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#FFCC00]">40</span>
+							</div>
+							<div
+								class="text-center text-[#888888] text-[25px] border border-[#111]/20 rounded-[10px] p-8">
+								NOMBRE | NOMBRE | NOMBRE
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-white py-8 px-12 rounded-[20px]">
+						<div class="flex items-center justify-between">
+							<div class="text-center">
+								<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
+								<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]">33%</span>
+							</div>
+							<div class="text-center">
+								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Proceso<br> en meses
+								</h4>
+								<span
+									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#54C4D2]">03</span>
+							</div>
+							<div class="text-center">
+								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Contrato<br> en meses
+								</h4>
+								<span
+									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#FFCC00]">40</span>
+							</div>
+							<div
+								class="text-center text-[#888888] text-[25px] border border-[#111]/20 rounded-[10px] p-8">
+								NOMBRE | NOMBRE | NOMBRE
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="bg-white py-8 px-12 rounded-[20px]">
+						<div class="flex items-center justify-between">
+							<div class="text-center">
+								<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
+								<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]">33%</span>
+							</div>
+							<div class="text-center">
+								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Proceso<br> en meses
+								</h4>
+								<span
+									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#54C4D2]">03</span>
+							</div>
+							<div class="text-center">
+								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Contrato<br> en meses
+								</h4>
+								<span
+									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#FFCC00]">40</span>
+							</div>
+							<div
+								class="text-center text-[#888888] text-[25px] border border-[#111]/20 rounded-[10px] p-8">
+								NOMBRE | NOMBRE | NOMBRE
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination --casos"></div>
+	</div>
+	</div>
+</section>
+
+<section class="py-[80px]">
+	<div class="tcp-container relative">
+		<h3 class="al-title --green mb-8"><span>¡Nuestro clientes comentan!</span></h3>
+		<p class="max-w-[412px] mb-12 mx-auto text-center text-[#141F39]/70">Quisque fermentum porta tincidunt.
+			Interdum semper. Pellentesque facilisis augue mollis suscipit.
+		</p>
+		<div class="flex gap-4 w-fit ml-auto md:-mt-[99px] mb-12">
+			<div class="swiper-button-prev --clientes bg-white shadow-sm rounded-full p-3 rounded-sm">
+				<svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M7.30903 15.397L1.00903 8.25075M1.00903 8.25075L7.30903 1.10449M1.00903 8.25075L17.209 8.25075"
+						stroke="#34A853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</div>
+			<div class="swiper-button-next --clientes bg-[#34A853] rounded-full p-3 rounded-sm">
+				<svg class="rotate-180" width="29" height="17" viewBox="0 0 19 17" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M7.30903 15.397L1.00903 8.25075M1.00903 8.25075L7.30903 1.10449M1.00903 8.25075L17.209 8.25075"
+						stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</div>
+		</div>
+		<div class="swiper testimonios-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="p-4 rounded-lg">
+						<div class="flex items-center gap-4">
+							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
+							<div class="">
+								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
+								<p class="text-[14px]">Designer</p>
+							</div>
+						</div>
+						<p class="text-[#717171] mt-4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
+							Sed
+							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
+							porta. Nullam mattis tristique iaculis.
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="p-4 rounded-lg">
+						<div class="flex items-center gap-4">
+							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
+							<div class="">
+								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
+								<p class="text-[14px]">Designer</p>
+							</div>
+						</div>
+						<p class="text-[#717171] mt-4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
+							Sed
+							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
+							porta. Nullam mattis tristique iaculis.
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="p-4 rounded-lg">
+						<div class="flex items-center gap-4">
+							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
+							<div class="">
+								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
+								<p class="text-[14px]">Designer</p>
+							</div>
+						</div>
+						<p class="text-[#717171] mt-4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
+							Sed
+							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
+							porta. Nullam mattis tristique iaculis.
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="p-4 rounded-lg">
+						<div class="flex items-center gap-4">
+							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
+							<div class="">
+								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
+								<p class="text-[14px]">Designer</p>
+							</div>
+						</div>
+						<p class="text-[#717171] mt-4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
+							Sed
+							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
+							porta. Nullam mattis tristique iaculis.
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="p-4 rounded-lg">
+						<div class="flex items-center gap-4">
+							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
+							<div class="">
+								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
+								<p class="text-[14px]">Designer</p>
+							</div>
+						</div>
+						<p class="text-[#717171] mt-4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
+							Sed
+							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
+							porta. Nullam mattis tristique iaculis.
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="p-4 rounded-lg">
+						<div class="flex items-center gap-4">
+							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
+							<div class="">
+								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
+								<p class="text-[14px]">Designer</p>
+							</div>
+						</div>
+						<p class="text-[#717171] mt-4">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
+							Sed
+							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
+							porta. Nullam mattis tristique iaculis.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="pt-[80px] relative z-50">
+	<div class="tcp-container">
+		<h3 class="font-bold text-[#060082] text-center text-[64px]">Contáctanos</h3>
+		<p class="max-w-[412px] mb-12 mx-auto text-center text-[#141F39]/70">Quisque fermentum porta tincidunt.
+			Interdum semper. Pellentesque facilisis augue mollis suscipit.
+		</p>
+	</div>
+	<div class="bg-gray-300 py-8 rounded-[40px]">
+		<div class="tcp-container">
+			<div class="bg-white/90 p-4 w-[550px] rounded-[20px] ml-auto">
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="bg-[#52525B] -mt-[35px] pt-[75px] pb-[40px]">
+
+</footer>
 
 <?php get_footer(); ?>
