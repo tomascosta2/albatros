@@ -71,13 +71,17 @@ get_header(); ?>
 	<div class="tcp-container --lightblue">
 		<h3 class="al-title mb-12"><span><?php echo $numeros_fields['titulo'] ?></span></h3>
 		<div class="grid md:grid-cols-3 gap-10">
-			<?php foreach ($numeros_fields['datos'] as $dato): ?>
+			<?php foreach ($numeros_fields['datos'] as $dato):
+				$valor = $dato['numero']; // Ejemplo: "45%" o "30+"
+				preg_match('/^(\d+)(\D*)$/', $valor, $partes);
+				$numero = isset($partes[1]) ? $partes[1] : 0;
+				$extra = isset($partes[2]) ? $partes[2] : '';
+			?>
 				<div class="shadow-xl p-8">
-					<p 
+					<p
 						class="text-center numero-animado text-[110px] leading-[100px] font-extrabold text-[#060082]"
-						data-final="<?php echo esc_html($dato['numero']); ?>"
-					>
-						0
+						data-final="<?php echo esc_html($dato['numero']); ?>">
+						0 <?php echo $extra; ?>
 					</p>
 					<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">
 						<?php echo esc_html($dato['tipo_de_dato']); ?>
@@ -101,9 +105,9 @@ get_header(); ?>
 <section id="servicios">
 	<div class="tcp-container">
 		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['titulo'] ?></span></h3>
-		<?php 
+		<?php
 		$i = 0;
-		foreach ($servicios_fields['planes'] as $plan): 
+		foreach ($servicios_fields['planes'] as $plan):
 			if ($i === 0) {
 				$bgColor = '#060082';
 				$textColor = '#FFFF';
@@ -115,7 +119,7 @@ get_header(); ?>
 				$textColor = '#060082';
 			}
 			$i++;
-			?>
+		?>
 			<div class="px-8 pt-12 pb-24 bg-[<?php echo $bgColor ?>] text-[<?php echo $textColor ?>] rounded-[40px] mb-8">
 				<div class="md:flex mb-2 gap-4 items-baseline mb-8">
 					<?php if (!empty($plan['icono'])): ?>
