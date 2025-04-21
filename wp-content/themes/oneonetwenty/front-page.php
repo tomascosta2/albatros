@@ -86,9 +86,7 @@ get_header(); ?>
 	<div class="tcp-container --lightblue">
 		<h3 class="al-title mb-12"><span><?php echo $numeros_fields['titulo'] ?></span></h3>
 		<div class="grid md:grid-cols-3 gap-10">
-			<?php 
-			print_r($numeros_fields['datos']);
-			foreach ($numeros_fields['datos'] as $dato): ?>
+			<?php foreach ($numeros_fields['datos'] as $dato): ?>
 				<div class="shadow-xl p-8">
 					<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">
 						<?php echo esc_html($dato['numero']); ?>
@@ -114,8 +112,8 @@ get_header(); ?>
 <section>
 	<div class="tcp-container">
 		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['titulo'] ?></span></h3>
-		<?php if (have_rows('planes')): ?>
-			<?php foreach (get_field('planes') as $plan): ?>
+		<?php if (have_rows($servicios_fields['planes'])): ?>
+			<?php foreach ($servicios_fields['planes'] as $plan): ?>
 				<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
 					<div class="flex mb-2 gap-4 items-baseline">
 						<?php if (!empty($plan['icono'])): ?>
