@@ -189,9 +189,9 @@ get_header(); ?>
 
 <section class="py-[80px]">
 	<div class="tcp-container relative">
-		<h3 class="al-title --green mb-8"><span>¡Nuestro clientes comentan!</span></h3>
-		<p class="max-w-[412px] mb-12 mx-auto text-center text-[#141F39]/70">Quisque fermentum porta tincidunt.
-			Interdum semper. Pellentesque facilisis augue mollis suscipit.
+		<h3 class="al-title --green mb-8"><span><?php echo $testimonios_fields['titulo'] ?></span></h3>
+		<p class="max-w-[412px] mb-12 mx-auto text-center text-[#141F39]/70">
+			<?php echo $testimonios_fields['bajada'] ?>
 		</p>
 		<div class="flex gap-4 w-fit ml-auto md:-mt-[99px] mb-12">
 			<div class="swiper-button-prev --clientes bg-white shadow-sm rounded-full p-3 rounded-sm">
@@ -212,108 +212,32 @@ get_header(); ?>
 		</div>
 		<div class="swiper testimonios-swiper">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="p-4 rounded-lg">
-						<div class="flex items-center gap-4">
-							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
-							<div class="">
-								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
-								<p class="text-[14px]">Designer</p>
+				<?php foreach ($testimonios_fields['lista_de_testimonios'] as $testimonio): ?>
+					<?php
+					$foto = $testimonio['foto'] ?? null;
+					$nombre = esc_html($testimonio['nombre']);
+					$profesion = esc_html($testimonio['profesion']);
+					$texto = esc_html($testimonio['testimonio']);
+					?>
+					<div class="swiper-slide">
+						<div class="p-4 rounded-lg">
+							<div class="flex items-center gap-4">
+								<?php if ($foto): ?>
+									<img class="size-[80px] rounded-full object-cover bg-[#54C4D2]"
+										src="<?php echo esc_url($foto['url']); ?>"
+										alt="<?php echo esc_attr($foto['alt'] ?: $nombre); ?>">
+								<?php else: ?>
+									<div class="size-[80px] rounded-full bg-[#54C4D2]"></div>
+								<?php endif; ?>
+								<div>
+									<h5 class="text-[20px] font-bold"><?php echo $nombre; ?></h5>
+									<p class="text-[14px]"><?php echo $profesion; ?></p>
+								</div>
 							</div>
+							<p class="text-[#717171] mt-4"><?php echo $texto; ?></p>
 						</div>
-						<p class="text-[#717171] mt-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
-							Sed
-							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
-							porta. Nullam mattis tristique iaculis.
-						</p>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="p-4 rounded-lg">
-						<div class="flex items-center gap-4">
-							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
-							<div class="">
-								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
-								<p class="text-[14px]">Designer</p>
-							</div>
-						</div>
-						<p class="text-[#717171] mt-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
-							Sed
-							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
-							porta. Nullam mattis tristique iaculis.
-						</p>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="p-4 rounded-lg">
-						<div class="flex items-center gap-4">
-							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
-							<div class="">
-								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
-								<p class="text-[14px]">Designer</p>
-							</div>
-						</div>
-						<p class="text-[#717171] mt-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
-							Sed
-							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
-							porta. Nullam mattis tristique iaculis.
-						</p>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="p-4 rounded-lg">
-						<div class="flex items-center gap-4">
-							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
-							<div class="">
-								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
-								<p class="text-[14px]">Designer</p>
-							</div>
-						</div>
-						<p class="text-[#717171] mt-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
-							Sed
-							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
-							porta. Nullam mattis tristique iaculis.
-						</p>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="p-4 rounded-lg">
-						<div class="flex items-center gap-4">
-							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
-							<div class="">
-								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
-								<p class="text-[14px]">Designer</p>
-							</div>
-						</div>
-						<p class="text-[#717171] mt-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
-							Sed
-							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
-							porta. Nullam mattis tristique iaculis.
-						</p>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="p-4 rounded-lg">
-						<div class="flex items-center gap-4">
-							<img class="size-[80px] rounded-full bg-[#54C4D2]" src="" alt="">
-							<div class="">
-								<h5 class="text-[20px] font-bold">Luis Quiroz</h5>
-								<p class="text-[14px]">Designer</p>
-							</div>
-						</div>
-						<p class="text-[#717171] mt-4">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
-							Sed
-							accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed
-							porta. Nullam mattis tristique iaculis.
-						</p>
-					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
