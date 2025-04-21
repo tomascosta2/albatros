@@ -175,7 +175,7 @@ get_header(); ?>
 					?>
 					<div class="swiper-slide">
 						<div class="bg-white py-8 px-12 rounded-[20px]">
-							<div class="flex items-center justify-between">
+							<div class="flex md:flex-row flex-col gap-4 items-center justify-between">
 								<div class="text-center">
 									<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
 									<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]"><?php echo $ahorro; ?></span>
