@@ -170,6 +170,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.al-title span {
 			position: relative;
 			z-index: 50;
+			line-height: 110%;
 		}
 
 		.al-title::before {
