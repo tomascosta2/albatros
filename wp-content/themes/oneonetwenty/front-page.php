@@ -157,7 +157,7 @@ get_header(); ?>
 					<?php foreach ($logos_fields['lista_de_logos'] as $item): ?>
 						<?php if (!empty($item['logo'])): ?>
 							<div class="swiper-slide flex justify-center items-center">
-								<img class="h-[118px] object-contain"
+								<img class="h-[118px] hover:scale-[103%] transition-all object-contain"
 									src="<?php echo esc_url($item['logo']['url']); ?>"
 									alt="<?php echo esc_attr($item['logo']['alt']); ?>" />
 							</div>
