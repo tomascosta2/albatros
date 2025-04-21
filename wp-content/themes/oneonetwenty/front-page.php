@@ -148,87 +148,38 @@ get_header(); ?>
 
 <section class="pt-[80px] pb-[100px] bg-[#FAFAFA] rounded-[40px]">
 	<div class="tcp-container relative">
-		<h3 class="al-title --green mb-12"><span>Casos de Éxito</span></h3>
+		<h3 class="al-title --green mb-12"><span><?php echo $casos_de_exito_fields['titulo'] ?></span></h3>
 		<div class="swiper casos-swiper rounded-[20px] shadow-[0px_0px_35px_#11111130]">
 			<div class="swiper-wrapper items-center">
-				<div class="swiper-slide">
-					<div class="bg-white py-8 px-12 rounded-[20px]">
-						<div class="flex items-center justify-between">
-							<div class="text-center">
-								<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
-								<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]">33%</span>
-							</div>
-							<div class="text-center">
-								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Proceso<br> en meses
-								</h4>
-								<span
-									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#54C4D2]">03</span>
-							</div>
-							<div class="text-center">
-								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Contrato<br> en meses
-								</h4>
-								<span
-									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#FFCC00]">40</span>
-							</div>
-							<div
-								class="text-center text-[#888888] text-[25px] border border-[#111]/20 rounded-[10px] p-8">
-								NOMBRE | NOMBRE | NOMBRE
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-white py-8 px-12 rounded-[20px]">
-						<div class="flex items-center justify-between">
-							<div class="text-center">
-								<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
-								<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]">33%</span>
-							</div>
-							<div class="text-center">
-								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Proceso<br> en meses
-								</h4>
-								<span
-									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#54C4D2]">03</span>
-							</div>
-							<div class="text-center">
-								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Contrato<br> en meses
-								</h4>
-								<span
-									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#FFCC00]">40</span>
-							</div>
-							<div
-								class="text-center text-[#888888] text-[25px] border border-[#111]/20 rounded-[10px] p-8">
-								NOMBRE | NOMBRE | NOMBRE
+				<?php foreach (($casos_de_exito_fields['slides']) as $slide): ?>
+					<?php
+					$ahorro = esc_html($slide['ahorro_final']);
+					$proceso = esc_html($slide['proceso_en_meses']);
+					$contrato = esc_html($slide['contrato_en_meses']);
+					$empresa = esc_html($slide['datos_empresa']);
+					?>
+					<div class="swiper-slide">
+						<div class="bg-white py-8 px-12 rounded-[20px]">
+							<div class="flex items-center justify-between">
+								<div class="text-center">
+									<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
+									<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]"><?php echo $ahorro; ?></span>
+								</div>
+								<div class="text-center">
+									<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Proceso<br> en meses</h4>
+									<span class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#54C4D2]"><?php echo $proceso; ?></span>
+								</div>
+								<div class="text-center">
+									<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Contrato<br> en meses</h4>
+									<span class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#FFCC00]"><?php echo $contrato; ?></span>
+								</div>
+								<div class="text-center text-[#888888] text-[25px] border border-[#111]/20 rounded-[10px] p-8">
+									<?php echo $empresa; ?>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="bg-white py-8 px-12 rounded-[20px]">
-						<div class="flex items-center justify-between">
-							<div class="text-center">
-								<h4 class="text-[40px] font-extrabold text-[#060082]">Ahorro final</h4>
-								<span class="text-[110px] font-extrabold leading-[80px] text-[#060082]">33%</span>
-							</div>
-							<div class="text-center">
-								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Proceso<br> en meses
-								</h4>
-								<span
-									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#54C4D2]">03</span>
-							</div>
-							<div class="text-center">
-								<h4 class="text-[#888] font-bold leading-[17px] text-[20px]">Contrato<br> en meses
-								</h4>
-								<span
-									class="font-extrabold text-[80px] tracking-tighter leading-[75px] text-[#FFCC00]">40</span>
-							</div>
-							<div
-								class="text-center text-[#888888] text-[25px] border border-[#111]/20 rounded-[10px] p-8">
-								NOMBRE | NOMBRE | NOMBRE
-							</div>
-						</div>
-					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 		<div class="swiper-pagination --casos"></div>
