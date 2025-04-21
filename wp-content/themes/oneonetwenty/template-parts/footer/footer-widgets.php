@@ -161,6 +161,9 @@ if (is_active_sidebar('sidebar-1')) : ?>
 			display: block;
 			width: fit-content;
 		}
+		.al-btn:hover {
+			scale: 105%;
+		}
 
 		.al-btn.--secondary {
 			background-color: #54C4D2;
