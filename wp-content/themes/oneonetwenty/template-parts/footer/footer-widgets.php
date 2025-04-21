@@ -121,6 +121,50 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		});
 	</script>
 
+	<!-- Contador -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const counters = document.querySelectorAll(".numero-animado");
+
+			const options = {
+				threshold: 0.5
+			};
+
+			const animateCount = (el, target) => {
+				let start = 0;
+				const duration = 2000;
+				const stepTime = Math.abs(Math.floor(duration / target));
+				const increment = target / (duration / stepTime);
+
+				const timer = setInterval(() => {
+					start += increment;
+					if (start >= target) {
+						el.textContent = target.toLocaleString();
+						clearInterval(timer);
+					} else {
+						el.textContent = Math.floor(start).toLocaleString();
+					}
+				}, stepTime);
+			};
+
+			const observer = new IntersectionObserver((entries, observer) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const el = entry.target;
+						const final = parseInt(el.getAttribute("data-final"));
+						animateCount(el, final);
+						observer.unobserve(el); // Solo lo anima una vez
+					}
+				});
+			}, options);
+
+			counters.forEach(counter => {
+				observer.observe(counter);
+			});
+		});
+	</script>
+
+
 	<!-- Estilos -->
 	<style>
 		/* plus-jakarta-sans-latin-wght-normal */

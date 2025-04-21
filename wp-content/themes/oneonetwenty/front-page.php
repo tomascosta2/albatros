@@ -73,7 +73,7 @@ get_header(); ?>
 		<div class="grid md:grid-cols-3 gap-10">
 			<?php foreach ($numeros_fields['datos'] as $dato): ?>
 				<div class="shadow-xl p-8">
-					<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">
+					<p class="text-center numero-animado text-[110px] leading-[100px] font-extrabold text-[#060082]">
 						<?php echo esc_html($dato['numero']); ?>
 					</p>
 					<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">
