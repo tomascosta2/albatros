@@ -117,7 +117,7 @@ get_header(); ?>
 					<?php if (!empty($plan['icono'])): ?>
 						<img class="size-[93px] object-fit" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
 					<?php endif; ?>
-					<h2 class="text-[60px] font-medium">
+					<h2 class="text-[60px] tracking-[-1px] font-medium">
 						<?php echo esc_html($plan['titulo']); ?>
 					</h2>
 				</div>
