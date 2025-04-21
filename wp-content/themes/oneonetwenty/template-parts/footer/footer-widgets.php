@@ -165,6 +165,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 			width: fit-content;
 			margin-left: auto;
 			margin-right: auto;
+			line-height: 110%;
 		}
 
 		.al-title span {
