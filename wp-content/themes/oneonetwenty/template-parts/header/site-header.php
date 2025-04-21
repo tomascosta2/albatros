@@ -37,7 +37,7 @@ $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
 				<a class="text-[#060082]" href="#servicios">Productos y servicios</a>
 				<a class="text-[#060082]" href="#casosDeExito">Casos de éxito</a>
 				<a class="al-btn --secondary" href="#contacto">Contacto</a>
-				<a class="al-btn" href="#!">Acceso Clientes</a>
+				<a class="al-btn" href="https://tem.albatrosspa.com/login">Acceso Clientes</a>
 			</nav>
 		</div>
 	</div>
