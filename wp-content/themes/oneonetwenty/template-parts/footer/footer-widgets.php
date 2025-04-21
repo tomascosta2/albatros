@@ -160,10 +160,11 @@ if (is_active_sidebar('sidebar-1')) : ?>
 			background-color: #4CAF4F;
 			display: block;
 			width: fit-content;
+			cursor: pointer;
 		}
 		.al-btn:hover {
 			scale: 105%;
-			transition: all 0.3s ease;
+			transition: all 0.2s ease;
 		}
 
 		.al-btn.--secondary {
