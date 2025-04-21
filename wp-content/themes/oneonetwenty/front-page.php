@@ -273,8 +273,4 @@ get_header(); ?>
 	</div>
 </section>
 
-<footer class="bg-[#52525B] -mt-[35px] pt-[75px] pb-[40px]">
-
-</footer>
-
 <?php get_footer(); ?>
