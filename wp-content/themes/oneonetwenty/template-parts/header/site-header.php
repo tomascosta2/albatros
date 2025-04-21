@@ -19,7 +19,7 @@ $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
 		<!-- Logo + menú -->
 		<div class="flex items-center justify-between mt-2">
 			<h1>
-				<img class="bg-gray-200 h-[63px] w-[309px] object-fit" src="<?php echo $logo_url ?>" alt="Albatros SpA.">
+				<img class="h-[63px] w-[309px] object-fit" src="<?php echo $logo_url ?>" alt="Albatros SpA.">
 			</h1>
 
 			<!-- Botón hamburguesa (solo visible en mobile) -->

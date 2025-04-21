@@ -97,11 +97,25 @@ get_header(); ?>
 <section id="servicios">
 	<div class="tcp-container">
 		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['titulo'] ?></span></h3>
-		<?php foreach ($servicios_fields['planes'] as $plan): ?>
-			<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
+		<?php 
+		$i = 0;
+		foreach ($servicios_fields['planes'] as $plan): 
+			$i++;
+			if ($i === 0) {
+				$bgColor = '#060082';
+				$textColor = '#FFFF';
+			} elseif ($i === 1) {
+				$bgColor = '#54C4D2';
+				$textColor = '#060082';
+			} else {
+				$bgColor = '#FFCC00';
+				$textColor = '#060082';
+			}
+			?>
+			<div class="px-8 pt-12 pb-24 bg-[<?php echo $bgColor ?>] text-[<?php echo $textColor ?>] rounded-[40px] mb-8">
 				<div class="flex mb-2 gap-4 items-baseline">
 					<?php if (!empty($plan['icono'])): ?>
-						<img class="size-[93px] object-fit bg-gray-200" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
+						<img class="size-[93px] object-fit" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
 					<?php endif; ?>
 					<h2 class="text-white text-[60px] font-medium">
 						<?php echo esc_html($plan['titulo']); ?>
