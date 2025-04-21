@@ -93,7 +93,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		});
 		new Swiper('.testimonios-swiper', {
 			loop: true,
-			slidesPerView: 2,
+			slidesPerView: 1,
 			spaceBetween: 20,
 			breakpoints: {
 				640: {
