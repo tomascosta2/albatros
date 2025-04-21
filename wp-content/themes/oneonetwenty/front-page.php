@@ -13,7 +13,7 @@ $contactanos_fields = get_field('contacto');
 get_header(); ?>
 
 <!-- Carrusel -->
-<section>
+<section id="inicio">
 	<div class="swiper w-full h-[450px] relative">
 		<div class="swiper-wrapper max-h-full">
 			<?php foreach ($hero_fields['slider'] as $slide): ?>
@@ -42,7 +42,7 @@ get_header(); ?>
 			<div class="swiper-button-next"></div> -->
 	</div>
 </section>
-<section>
+<section id="nosotros">
 	<div class="tcp-container">
 		<div class="bg-[#060082] p-[60px] rounded-br-[40px] rounded-bl-[40px]">
 			<div class="max-w-[800px] mx-auto flex flex-col md:flex-row items-baseline gap-12">
@@ -94,7 +94,7 @@ get_header(); ?>
 		</p>
 	</div>
 </section>
-<section>
+<section id="servicios">
 	<div class="tcp-container">
 		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['titulo'] ?></span></h3>
 		<?php foreach ($servicios_fields['planes'] as $plan): ?>
@@ -146,7 +146,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="pt-[80px] pb-[100px] bg-[#FAFAFA] rounded-[40px]">
+<section class="pt-[80px] pb-[100px] bg-[#FAFAFA] rounded-[40px]" id="casosDeExito">
 	<div class="tcp-container relative">
 		<h3 class="al-title --green mb-12"><span><?php echo $casos_de_exito_fields['titulo'] ?></span></h3>
 		<div class="swiper casos-swiper rounded-[20px] shadow-[0px_0px_35px_#11111130]">
@@ -243,7 +243,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="pt-[80px] relative z-50">
+<section class="pt-[80px] relative z-50" id="contacto">
 	<div class="tcp-container">
 		<h3 class="font-bold text-[#060082] text-center text-[64px]"><?php echo $contactanos_fields['titulo'] ?></h3>
 		<p class="max-w-[412px] mb-12 mx-auto text-center text-[#141F39]/70">

@@ -1,19 +1,7 @@
-<?php
-
-/**
- * Displays the site header.
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
- */
-
-$wrapper_classes  = 'site-header';
-$wrapper_classes .= has_custom_logo() ? ' has-logo' : '';
-$wrapper_classes .= (true === get_theme_mod('display_title_and_tagline', true)) ? ' has-title-and-tagline' : '';
-$wrapper_classes .= has_nav_menu('primary') ? ' has-menu' : '';
+<?php 
+$custom_logo_id = get_theme_mod('custom_logo');
+$logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
 ?>
-
 
 <!-- Header -->
 <header class="py-2">
@@ -31,7 +19,7 @@ $wrapper_classes .= has_nav_menu('primary') ? ' has-menu' : '';
 		<!-- Logo + menú -->
 		<div class="flex items-center justify-between mt-2">
 			<h1>
-				<img class="bg-gray-200 h-[63px] w-[309px] object-fit" src="" alt="Albatros SpA.">
+				<img class="bg-gray-200 h-[63px] w-[309px] object-fit" src="<?php echo $logo_url ?>" alt="Albatros SpA.">
 			</h1>
 
 			<!-- Botón hamburguesa (solo visible en mobile) -->
@@ -44,12 +32,12 @@ $wrapper_classes .= has_nav_menu('primary') ? ' has-menu' : '';
 			<!-- Menú de navegación -->
 			<nav id="menu"
 				class="hidden z-50 flex-col gap-4 absolute top-[107px] left-0 w-full bg-white p-4 md:static md:top-0 flex md:flex md:flex-row md:items-center md:gap-4 md:w-auto">
-				<a class="text-[#060082]" href="">Inicio</a>
-				<a class="text-[#060082]" href="">Nosotros</a>
-				<a class="text-[#060082]" href="">Productos y servicios</a>
-				<a class="text-[#060082]" href="">Casos de éxito</a>
-				<a class="al-btn --secondary" href="">Contacto</a>
-				<a class="al-btn" href="">Acceso Clientes</a>
+				<a class="text-[#060082]" href="#inicio">Inicio</a>
+				<a class="text-[#060082]" href="#nosotros">Nosotros</a>
+				<a class="text-[#060082]" href="#servicios">Productos y servicios</a>
+				<a class="text-[#060082]" href="#casosDeExito">Casos de éxito</a>
+				<a class="al-btn --secondary" href="#contacto">Contacto</a>
+				<a class="al-btn" href="#!">Acceso Clientes</a>
 			</nav>
 		</div>
 	</div>
