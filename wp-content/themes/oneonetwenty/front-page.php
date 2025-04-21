@@ -86,8 +86,8 @@ get_header(); ?>
 			<?php endforeach; ?>
 		</div>
 		<div class="p-8 bg-[#54C4D2] mt-8">
-			<h2 class="text-white text-[40px] md:text-[60px] font-medium text-center"><?php echo $numeros_fields['titulo_banner'] ?>r</h2>
-			<p class="text-[#060082] text-[60px] font-extrabold text-center md:leading-[120px] md:text-[130px]"><?php echo $numeros_fields['numero_banner'] ?></p>
+			<h2 class="text-white text-[40px] leading-[120%] md:text-[60px] font-medium text-center"><?php echo $numeros_fields['titulo_banner'] ?>r</h2>
+			<p class="text-[#060082] text-[60px] leading-[120%] font-extrabold text-center md:leading-[120px] md:text-[130px]"><?php echo $numeros_fields['numero_banner'] ?></p>
 		</div>
 		<p class="text-[#52525B] text-[20px] leading-[28px] mt-8 max-w-[970px] mx-auto text-justify">
 			<?php echo $numeros_fields['texto'] ?>
