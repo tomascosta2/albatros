@@ -210,7 +210,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.al-title.--green::before {
 			background-color: #4CAF4F;
 		}
-		.al-title:hover::before {
+		section:hover .al-title::before {
 			width: 100px;
 			height: 100px;
 			top: calc(50% - 50px);
