@@ -114,7 +114,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		}
 
 		body {
-			font-family: 'Plus Jakarta Sans Variable';
+			font-family: 'Plus Jakarta Sans Variable' !important;
 		}
 
 		.tcp-container {

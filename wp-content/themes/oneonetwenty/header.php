@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="<?= get_template_directory_uri() . '/assets/css/custom.css' ?>">
-	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body <?php body_class(); ?>>
