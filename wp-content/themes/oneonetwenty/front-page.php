@@ -10,6 +10,10 @@ $casos_de_exito_fields = get_field('casos_de_exito');
 $testimonios_fields = get_field('testimonios');
 $contactanos_fields = get_field('contactanos');
 
+echo '<pre>';
+print_r($hero_fields);
+echo '</pre>';
+
 get_header(); ?>
 
 <!-- Carrusel -->
@@ -149,7 +153,7 @@ get_header(); ?>
 					<?php foreach ($logos_fields['lista_de_logos'] as $item): ?>
 						<?php if (!empty($item['logo'])): ?>
 							<div class="swiper-slide flex justify-center items-center">
-								<img class="bg-gray-200 h-[118px] object-contain"
+								<img class="h-[118px] object-contain"
 									src="<?php echo esc_url($item['logo']['url']); ?>"
 									alt="<?php echo esc_attr($item['logo']['alt']); ?>" />
 							</div>
