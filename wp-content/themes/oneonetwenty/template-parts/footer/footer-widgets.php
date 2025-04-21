@@ -13,6 +13,11 @@ if (is_active_sidebar('sidebar-1')) : ?>
 				el: '.swiper-pagination',
 				clickable: true
 			},
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			speed: 300
 			// navigation: {
 			// 	nextEl: '.swiper-button-next',
 			// 	prevEl: '.swiper-button-prev'
