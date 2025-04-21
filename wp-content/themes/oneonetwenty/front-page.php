@@ -86,7 +86,7 @@ get_header(); ?>
 			<?php endforeach; ?>
 		</div>
 		<div class="p-8 bg-[#54C4D2] mt-8">
-			<h2 class="text-white text-[40px] leading-[120%] md:text-[60px] font-medium text-center"><?php echo $numeros_fields['titulo_banner'] ?>r</h2>
+			<h2 class="text-white mb-8 text-[40px] leading-[120%] md:text-[60px] font-medium text-center"><?php echo $numeros_fields['titulo_banner'] ?>r</h2>
 			<p class="text-[#060082] text-[60px] leading-[120%] font-extrabold text-center md:leading-[120px] md:text-[130px]"><?php echo $numeros_fields['numero_banner'] ?></p>
 		</div>
 		<p class="text-[#52525B] text-[20px] leading-[28px] mt-8 max-w-[970px] mx-auto text-justify">
@@ -94,6 +94,7 @@ get_header(); ?>
 		</p>
 	</div>
 </section>
+
 <section id="servicios">
 	<div class="tcp-container">
 		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['titulo'] ?></span></h3>
@@ -113,11 +114,11 @@ get_header(); ?>
 			$i++;
 			?>
 			<div class="px-8 pt-12 pb-24 bg-[<?php echo $bgColor ?>] text-[<?php echo $textColor ?>] rounded-[40px] mb-8">
-				<div class="flex mb-2 gap-4 items-baseline">
+				<div class="md:flex mb-2 gap-4 items-baseline">
 					<?php if (!empty($plan['icono'])): ?>
 						<img class="size-[93px] object-fit" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
 					<?php endif; ?>
-					<h2 class="text-[60px] tracking-[-1px] font-medium">
+					<h2 class="text-[32px] leading-[110%] md:text-[60px] tracking-[-1px] font-medium">
 						<?php echo esc_html($plan['titulo']); ?>
 					</h2>
 				</div>
