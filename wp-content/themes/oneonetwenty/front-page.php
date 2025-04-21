@@ -210,6 +210,7 @@ get_header(); ?>
 	</div>
 </section>
 
+<?php if ($testimonios_fields['lista_de_testimonios']) : ?>
 <section class="py-[80px]">
 	<div class="tcp-container relative">
 		<h3 class="al-title --green mb-8"><span><?php echo $testimonios_fields['titulo'] ?></span></h3>
@@ -265,6 +266,7 @@ get_header(); ?>
 		</div>
 	</div>
 </section>
+<?php endif; ?>
 
 <section class="pt-[80px] relative z-50" id="contacto">
 	<div class="tcp-container">
