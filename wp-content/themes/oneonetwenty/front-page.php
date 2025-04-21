@@ -73,15 +73,13 @@ get_header(); ?>
 		<div class="grid md:grid-cols-3 gap-10">
 			<?php foreach ($numeros_fields['datos'] as $dato):
 				$valor = $dato['numero']; // Ejemplo: "45%" o "30+"
-				preg_match('/^(\d+)(\D*)$/', $valor, $partes);
+				preg_match('/^(\d+)([^0-9]*)$/', $valor, $partes);
 				$numero = isset($partes[1]) ? $partes[1] : 0;
 				$extra = isset($partes[2]) ? $partes[2] : '';
-				echo "Extra ", $extra;
 			?>
 				<div class="shadow-xl p-8">
 					<p
-						class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]"
-					>
+						class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">
 						<span class="numero-animado" data-final="<?php echo esc_html($dato['numero']); ?>">0</span><?php echo esc_html($extra); ?>
 					</p>
 					<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">
