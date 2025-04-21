@@ -146,7 +146,7 @@ get_header(); ?>
 		<div class="bg-white rounded-[20px] py-10 px-16 shadow-[0px_0px_35px_#11111130]">
 			<div class="swiper logo-swiper">
 				<div class="swiper-wrapper items-center">
-					<?php foreach ($logos_fields as $item): ?>
+					<?php foreach ($logos_fields['lista_de_logos'] as $item): ?>
 						<?php if (!empty($item['logo'])): ?>
 							<div class="swiper-slide flex justify-center items-center">
 								<img class="bg-gray-200 h-[118px] object-contain"
