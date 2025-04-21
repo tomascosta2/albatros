@@ -118,7 +118,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		}
 
 		.tcp-container {
-			max-width: 1140px;
+			max-width: 1200px;
 			margin: 0 auto;
 			padding: 0 16px;
 		}
