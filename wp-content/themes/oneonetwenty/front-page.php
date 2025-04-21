@@ -146,17 +146,15 @@ get_header(); ?>
 		<div class="bg-white rounded-[20px] py-10 px-16 shadow-[0px_0px_35px_#11111130]">
 			<div class="swiper logo-swiper">
 				<div class="swiper-wrapper items-center">
-					<?php if (have_rows('lista_de_logos')): ?>
-						<?php foreach (get_field('lista_de_logos') as $item): ?>
-							<?php if (!empty($item['logo'])): ?>
-								<div class="swiper-slide flex justify-center items-center">
-									<img class="bg-gray-200 h-[118px] object-contain"
-										src="<?php echo esc_url($item['logo']['url']); ?>"
-										alt="<?php echo esc_attr($item['logo']['alt']); ?>" />
-								</div>
-							<?php endif; ?>
-						<?php endforeach; ?>
-					<?php endif; ?>
+					<?php foreach ($logos_fields as $item): ?>
+						<?php if (!empty($item['logo'])): ?>
+							<div class="swiper-slide flex justify-center items-center">
+								<img class="bg-gray-200 h-[118px] object-contain"
+									src="<?php echo esc_url($item['logo']['url']); ?>"
+									alt="<?php echo esc_attr($item['logo']['alt']); ?>" />
+							</div>
+						<?php endif; ?>
+					<?php endforeach; ?>
 				</div>
 			</div>
 		</div>
