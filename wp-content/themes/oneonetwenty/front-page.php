@@ -93,7 +93,7 @@ get_header(); ?>
 				</div>
 			<?php endforeach; ?>
 		</div>
-		<div class="p-8 bg-[#54C4D2] mt-8">
+		<div class="p-8 bg-[#54C4D2] mt-8 hover:scale-[105%] transition-all">
 			<h2 class="text-white mb-8 text-[40px] leading-[120%] md:text-[60px] font-medium text-center"><?php echo $numeros_fields['titulo_banner'] ?>r</h2>
 			<p class="text-[#060082] text-[60px] leading-[120%] font-extrabold text-center md:leading-[120px] md:text-[130px]"><?php echo $numeros_fields['numero_banner'] ?></p>
 		</div>
