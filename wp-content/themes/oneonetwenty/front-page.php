@@ -144,7 +144,7 @@ get_header(); ?>
 		<form action="/" class="bg-white shadow-[0px_0px_35px_#11111130] hover:scale-[103%] transition-all p-1 flex max-w-[617px] mx-auto rounded-lg">
 			<input class="outline-none p-4 w-full" placeholder="Introduce tu dirección de correo electrónico"
 				type="text">
-			<button class="text-white font-semibold py-2 px-8 rounded-lg bg-[#4CAF4F]">Contáctanos</button>
+			<button class="text-white font-semibold py-2 px-8 rounded-lg bg-[#4CAF4F] cursor-pointer">Contáctanos</button>
 		</form>
 	</div>
 </section>
