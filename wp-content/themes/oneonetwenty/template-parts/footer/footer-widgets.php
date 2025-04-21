@@ -6,7 +6,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 
 	<footer class="bg-[#52525B] -mt-[35px] pt-[75px] pb-[40px]">
 		<div class="tcp-container">
-			<div class="flex justify-between text-white">
+			<div class="flex md:flex-row flex-col md:gap-0 gap-8 justify-between text-white">
 				<div class="max-w-[340px]">
 					<img src="/wp-content/themes/oneonetwenty/assets/images/logo-white.png" alt="Albatros">
 					<p class="mt-8">© 2025 Albatros SPA</p>
