@@ -198,6 +198,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 			position: absolute;
 			left: -15px;
 			top: calc(50% - 40px);
+			transition: all 0.3s ease;
 		}
 
 		.al-title.--double-line {
@@ -212,7 +213,6 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.al-title:hover::before {
 			width: 100px;
 			height: 100px;
-			transition: all 0.3s ease;
 			top: calc(50% - 50px);
 			left: -25px;
 		}
