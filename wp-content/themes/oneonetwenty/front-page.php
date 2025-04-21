@@ -86,7 +86,9 @@ get_header(); ?>
 	<div class="tcp-container --lightblue">
 		<h3 class="al-title mb-12"><span><?php echo $numeros_fields['titulo'] ?></span></h3>
 		<div class="grid md:grid-cols-3 gap-10">
-			<?php foreach ($numeros_fields['datos'] as $dato): ?>
+			<?php 
+			print_r($numeros_fields['datos']);
+			foreach ($numeros_fields['datos'] as $dato): ?>
 				<div class="shadow-xl p-8">
 					<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">
 						<?php echo esc_html($dato['numero']); ?>
