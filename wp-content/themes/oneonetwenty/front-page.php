@@ -121,12 +121,12 @@ get_header(); ?>
 			}
 			$i++;
 		?>
-			<div class="px-8 pt-12 pb-24 hover:scale-110 transition-all bg-[<?php echo $bgColor ?>] text-[<?php echo $textColor ?>] rounded-[40px] mb-8">
+			<div class="px-8 pt-12 pb-24 hover:scale-[103%] transition-all bg-[<?php echo $bgColor ?>] text-[<?php echo $textColor ?>] rounded-[40px] mb-8">
 				<div class="md:flex mb-2 gap-4 items-baseline mb-8">
 					<?php if (!empty($plan['icono'])): ?>
 						<img class="size-[93px] object-fit" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
 					<?php endif; ?>
-					<h2 class="text-[32px] leading-[103%] mt-4 md:text-[60px] tracking-[-1px] font-medium">
+					<h2 class="text-[32px] leading-[110%] mt-4 md:text-[60px] tracking-[-1px] font-medium">
 						<?php echo esc_html($plan['titulo']); ?>
 					</h2>
 				</div>
