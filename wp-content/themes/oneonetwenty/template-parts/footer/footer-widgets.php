@@ -45,12 +45,10 @@ if (is_active_sidebar('sidebar-1')) : ?>
 					</p>
 				</div>
 				<div class="w-fit">
-					<nav class="text-white text-[18px]">
-						<a class="mb-2" href="/">Home</a>
-						<a class="mb-2" href="#nosotros">Nosotros</a>
-						<a class="mb-2" href="#servicios">Productos y servicios</a>
-						<a href="casosDeExito">Casos de Éxito</a>
-					</nav>
+						<a class="block mb-2" href="/">Home</a>
+						<a class="block mb-2" href="#nosotros">Nosotros</a>
+						<a class="block mb-2" href="#servicios">Productos y servicios</a>
+						<a class="block" href="casosDeExito">Casos de Éxito</a>
 				</div>
 			</div>
 		</div>
