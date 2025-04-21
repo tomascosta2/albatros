@@ -79,9 +79,9 @@ get_header(); ?>
 			?>
 				<div class="shadow-xl p-8">
 					<p
-						class="text-center numero-animado text-[110px] leading-[100px] font-extrabold text-[#060082]"
-						data-final="<?php echo esc_html($dato['numero']); ?>">
-						0 <?php echo $extra; ?>
+						class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]"
+					>
+						<span class="numero-animado" data-final="<?php echo esc_html($dato['numero']); ?>">0</span><?php echo $extra; ?>
 					</p>
 					<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">
 						<?php echo esc_html($dato['tipo_de_dato']); ?>
