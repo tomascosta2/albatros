@@ -8,7 +8,7 @@ $contacto_rapido_fields = get_field('contacto_rapido');
 $logos_fields = get_field('logos');
 $casos_de_exito_fields = get_field('casos_de_exito');
 $testimonios_fields = get_field('testimonios');
-$contactanos_fields = get_field('contactanos');
+$contactanos_fields = get_field('contacto');
 
 get_header(); ?>
 
