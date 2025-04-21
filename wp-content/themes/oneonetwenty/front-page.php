@@ -113,7 +113,7 @@ get_header(); ?>
 </section>
 <section>
 	<div class="tcp-container">
-		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['texto'] ?></span></h3>
+		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['titulo'] ?></span></h3>
 		<?php if (have_rows('planes')): ?>
 			<?php foreach (get_field('planes') as $plan): ?>
 				<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
