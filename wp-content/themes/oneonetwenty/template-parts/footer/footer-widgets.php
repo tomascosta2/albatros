@@ -199,6 +199,11 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.al-title.--green::before {
 			background-color: #4CAF4F;
 		}
+		.al-title:hover::before {
+			width: 80px;
+			height: 80px;
+			transition: all;
+		}
 
 		/* Slider Casos */
 		.swiper-pagination.--casos {
