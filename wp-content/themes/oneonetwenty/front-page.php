@@ -264,7 +264,7 @@ get_header(); ?>
 			<?php echo $contactanos_fields['bajada'] ?>
 		</p>
 	</div>
-	<div class="bg-[<?php echo $contactanos_fields['imagen_fondo'] ?>] bg-cover py-8 rounded-[40px]">
+	<div class="bg-[<?php echo $contactanos_fields['imagen_fondo']['url'] ?>] bg-cover py-8 rounded-[40px]">
 		<div class="tcp-container">
 			<div class="bg-white/90 p-4 w-[550px] rounded-[20px] ml-auto">
 				<?php echo do_shortcode('[contact-form-7 id="151ccd1" title="Contact form 1"]'); ?>
