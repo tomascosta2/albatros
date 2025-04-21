@@ -100,7 +100,6 @@ get_header(); ?>
 		<?php 
 		$i = 0;
 		foreach ($servicios_fields['planes'] as $plan): 
-			$i++;
 			if ($i === 0) {
 				$bgColor = '#060082';
 				$textColor = '#FFFF';
@@ -111,17 +110,18 @@ get_header(); ?>
 				$bgColor = '#FFCC00';
 				$textColor = '#060082';
 			}
+			$i++;
 			?>
 			<div class="px-8 pt-12 pb-24 bg-[<?php echo $bgColor ?>] text-[<?php echo $textColor ?>] rounded-[40px] mb-8">
 				<div class="flex mb-2 gap-4 items-baseline">
 					<?php if (!empty($plan['icono'])): ?>
 						<img class="size-[93px] object-fit" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
 					<?php endif; ?>
-					<h2 class="text-white text-[60px] font-medium">
+					<h2 class="text-[60px] font-medium">
 						<?php echo esc_html($plan['titulo']); ?>
 					</h2>
 				</div>
-				<p class="text-white text-[18px] leading-[20px] text-justify">
+				<p class="text-[18px] leading-[20px] text-justify">
 					<?php echo esc_html($plan['texto']); ?>
 				</p>
 			</div>
