@@ -163,6 +163,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		}
 		.al-btn:hover {
 			scale: 105%;
+			animation: all 0.3s ease;
 		}
 
 		.al-btn.--secondary {
