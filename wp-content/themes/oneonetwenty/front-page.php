@@ -10,10 +10,6 @@ $casos_de_exito_fields = get_field('casos_de_exito');
 $testimonios_fields = get_field('testimonios');
 $contactanos_fields = get_field('contactanos');
 
-echo '<pre>';
-print_r($hero_fields);
-echo '</pre>';
-
 get_header(); ?>
 
 <!-- Carrusel -->
