@@ -17,7 +17,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 				delay: 2000,
 				disableOnInteraction: false,
 			},
-			speed: 300
+			speed: 800
 			// navigation: {
 			// 	nextEl: '.swiper-button-next',
 			// 	prevEl: '.swiper-button-prev'
