@@ -1,4 +1,16 @@
-<?php get_header(); ?>
+<?php
+
+$hero_fields = get_field('hero');
+$experiencia_fields = get_field('experiencia');
+$numeros_fields = get_field('numeros');
+$servicios_fields = get_field('servicios');
+$contacto_rapido_fields = get_field('contacto_rapido');
+$logos_fields = get_field('logos');
+$casos_de_exito_fields = get_field('casos_de_exito');
+$testimonios_fields = get_field('testimonios');
+$contactanos_fields = get_field('contactanos');
+
+get_header(); ?>
 
 <!-- Carrusel -->
 <section>
@@ -8,9 +20,10 @@
 			<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
 				<div class="tcp-container">
 					<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
-						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">Cambiar y Estrategia
-							con visión global</h2>
-						<a class="al-btn mt-4" href="#">CTA</a>
+						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">
+							<?php echo $hero_fields['titulo'] ?>
+						</h2>
+						<a class="al-btn mt-4" href="<?php echo $hero_fields['boton']['link'] ?>"><?php echo $hero_fields['boton']['title'] ?></a>
 					</div>
 				</div>
 			</div>
@@ -18,9 +31,10 @@
 			<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
 				<div class="tcp-container">
 					<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
-						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">Cambiar y Estrategia
-							con visión global</h2>
-						<a class="al-btn" href="#">CTA</a>
+						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">
+							<?php echo $hero_fields['titulo'] ?>
+						</h2>
+						<a class="al-btn mt-4" href="<?php echo $hero_fields['boton']['link'] ?>"><?php echo $hero_fields['boton']['title'] ?></a>
 					</div>
 				</div>
 			</div>
@@ -28,9 +42,10 @@
 			<div class="swiper-slide bg-[url('')] flex items-center justify-center bg-gray-300">
 				<div class="tcp-container">
 					<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
-						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">Cambiar y Estrategia
-							con visión global</h2>
-						<a class="al-btn" href="#">CTA</a>
+						<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">
+							<?php echo $hero_fields['titulo'] ?>
+						</h2>
+						<a class="al-btn mt-4" href="<?php echo $hero_fields['boton']['link'] ?>"><?php echo $hero_fields['boton']['title'] ?></a>
 					</div>
 				</div>
 			</div>
@@ -47,21 +62,20 @@
 		<div class="bg-[#060082] p-[60px] rounded-br-[40px] rounded-bl-[40px]">
 			<div class="max-w-[800px] mx-auto flex flex-col md:flex-row items-baseline gap-12">
 				<div class="w-fit mx-auto">
-					<p
-						class="md:mx-0 w-fit leading-[155px] text-white font-extrabold tracking-tighter text-[190px]">
-						+10</p>
+					<p class="md:mx-0 w-fit leading-[155px] text-white font-extrabold tracking-tighter text-[190px]">
+						<?php echo $experiencia_fields['numero'] ?>
+					</p>
 					<p
 						class="md:mx-0 w-fit leading-[110px] -mt-[15px] text-[#54C4D2] font-extrabold tracking-tighter text-[140px]">
-						años</p>
+						<?php echo $experiencia_fields['tiempo'] ?>
+					</p>
 					<p
 						class="md:mx-0 w-fit leading-[130%] text-[#FFCC00] font-extrabold tracking-tighter text-[22px]">
-						ayudando a grandes empresas</p>
+						<?php echo $experiencia_fields['bajada'] ?>
+					</p>
 				</div>
 				<p class="text-white">
-					Más de 10 años potenciando a grandes empresas a través de soluciones en abastecimiento
-					estratégico, gestión de gastos y consultorías. Generamos ahorros significativos, mejoramos el
-					EBITDA y elevamos la competitividad, aplicando metodologías de clase mundial adaptadas a cada
-					cliente.
+					<?php echo $experiencia_fields['texto'] ?>
 				</p>
 			</div>
 		</div>
@@ -70,35 +84,30 @@
 
 <section class="py-[80px]">
 	<div class="tcp-container --lightblue">
-		<h3 class="al-title mb-12"><span>Nosotros</span></h3>
+		<h3 class="al-title mb-12"><span><?php echo $numeros_fields['titulo'] ?></span></h3>
 		<div class="grid md:grid-cols-3 gap-10">
-			<div class="shadow-xl p-8">
-				<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">+25</p>
-				<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">años</p>
-				<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">de experiencia
-					profesional</p>
-			</div>
-			<div class="shadow-xl p-8">
-				<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">+25</p>
-				<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">años</p>
-				<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">de experiencia
-					profesional</p>
-			</div>
-			<div class="shadow-xl p-8">
-				<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">+25</p>
-				<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">años</p>
-				<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">de experiencia
-					profesional</p>
-			</div>
+			<?php if (have_rows('datos')): ?>
+				<?php foreach (get_field('datos') as $dato): ?>
+					<div class="shadow-xl p-8">
+						<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">
+							<?php echo esc_html($dato['numero']); ?>
+						</p>
+						<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">
+							<?php echo esc_html($dato['tipo_de_dato']); ?>
+						</p>
+						<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">
+							<?php echo esc_html($dato['detalle']); ?>
+						</p>
+					</div>
+				<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
 		<div class="p-8 bg-[#54C4D2] mt-8">
-			<h2 class="text-white text-[60px] font-medium text-center">Gestión de proyectos por</h2>
-			<p class="text-[#060082] font-extrabold text-center leading-[120px] text-[130px]">+US$ 235 MM</p>
+			<h2 class="text-white text-[60px] font-medium text-center"><?php echo $numeros_fields['titulo_banner'] ?>r</h2>
+			<p class="text-[#060082] font-extrabold text-center leading-[120px] text-[130px]"><?php echo $numeros_fields['numero_banner'] ?></p>
 		</div>
 		<p class="text-[#52525B] text-[20px] leading-[28px] mt-8 max-w-[970px] mx-auto text-justify">
-			Equipo con más de 25 años de experiencia en gestión de costos y estrategia, logrando ahorros promedio
-			del 16%. Aplicamos un análisis riguroso, negociación experta y total transparencia en cada etapa del
-			proceso. Generamos confianza a través de resultados medibles y control total para nuestros clientes.
+			<?php echo $numeros_fields['texto'] ?>
 		</p>
 	</div>
 </section>
