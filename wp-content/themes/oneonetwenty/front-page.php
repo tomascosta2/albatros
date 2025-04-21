@@ -86,21 +86,19 @@ get_header(); ?>
 	<div class="tcp-container --lightblue">
 		<h3 class="al-title mb-12"><span><?php echo $numeros_fields['titulo'] ?></span></h3>
 		<div class="grid md:grid-cols-3 gap-10">
-			<?php if (have_rows($numeros_fields['titulo'])): ?>
-				<?php foreach ($numeros_fields['datos'] as $dato): ?>
-					<div class="shadow-xl p-8">
-						<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">
-							<?php echo esc_html($dato['numero']); ?>
-						</p>
-						<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">
-							<?php echo esc_html($dato['tipo_de_dato']); ?>
-						</p>
-						<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">
-							<?php echo esc_html($dato['detalle']); ?>
-						</p>
-					</div>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php foreach ($numeros_fields['datos'] as $dato): ?>
+				<div class="shadow-xl p-8">
+					<p class="text-center text-[110px] leading-[100px] font-extrabold text-[#060082]">
+						<?php echo esc_html($dato['numero']); ?>
+					</p>
+					<p class="text-center text-[80px] leading-[70px] font-extrabold text-[#54C4D2]">
+						<?php echo esc_html($dato['tipo_de_dato']); ?>
+					</p>
+					<p class="text-center leading-[100%] font-extrabold text-[#54C4D2] text-[28px]">
+						<?php echo esc_html($dato['detalle']); ?>
+					</p>
+				</div>
+			<?php endforeach; ?>
 		</div>
 		<div class="p-8 bg-[#54C4D2] mt-8">
 			<h2 class="text-white text-[60px] font-medium text-center"><?php echo $numeros_fields['titulo_banner'] ?>r</h2>
