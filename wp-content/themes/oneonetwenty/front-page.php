@@ -245,9 +245,9 @@ get_header(); ?>
 
 <section class="pt-[80px] relative z-50">
 	<div class="tcp-container">
-		<h3 class="font-bold text-[#060082] text-center text-[64px]">Contáctanos</h3>
-		<p class="max-w-[412px] mb-12 mx-auto text-center text-[#141F39]/70">Quisque fermentum porta tincidunt.
-			Interdum semper. Pellentesque facilisis augue mollis suscipit.
+		<h3 class="font-bold text-[#060082] text-center text-[64px]"><?php echo $contactanos_fields['titulo'] ?></h3>
+		<p class="max-w-[412px] mb-12 mx-auto text-center text-[#141F39]/70">
+			<?php echo $contactanos_fields['bajada'] ?>
 		</p>
 	</div>
 	<div class="bg-gray-300 py-8 rounded-[40px]">
