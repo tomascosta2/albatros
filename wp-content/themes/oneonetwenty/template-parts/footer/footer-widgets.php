@@ -202,8 +202,9 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.al-title:hover::before {
 			width: 100px;
 			height: 100px;
-			transition: all;
+			transition: all 0.3s ease;
 			top: calc(50% - 50px);
+			left: -25px;
 		}
 
 		/* Slider Casos */
