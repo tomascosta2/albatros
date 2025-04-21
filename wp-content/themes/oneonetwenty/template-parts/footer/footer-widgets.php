@@ -199,6 +199,56 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.swiper-button-prev.--clientes::after {
 			display: none;
 		}
+
+		/* Contact Form */
+		/* Contenedor del formulario */
+		.form-wrapper {
+			background-color: rgba(255, 255, 255, 0.8);
+			/* fondo blanco con opacidad */
+			backdrop-filter: blur(10px);
+			/* desenfoque */
+			-webkit-backdrop-filter: blur(10px);
+			/* compatibilidad Safari */
+			padding: 2rem;
+			border-radius: 1rem;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Campos de entrada, select y textarea */
+		.wpcf7 input.input-field,
+		.wpcf7 select.input-field,
+		.wpcf7 textarea.input-field {
+			width: 100%;
+			padding: 12px;
+			border: 2px solid #060082;
+			border-radius: 6px;
+			font-size: 14px;
+			color: #060082;
+			margin-bottom: 1rem;
+			outline: none;
+		}
+
+		.wpcf7 input.input-field::placeholder,
+		.wpcf7 textarea.input-field::placeholder {
+			color: #888;
+		}
+
+		/* Botón de envío */
+		.wpcf7 input.submit-button {
+			background-color: #00BA88;
+			color: white;
+			font-weight: bold;
+			padding: 0.75rem 2rem;
+			border: none;
+			border-radius: 6px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		.wpcf7 input.submit-button:hover {
+			background-color: #00a477;
+		}
+		
 	</style>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
