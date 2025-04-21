@@ -8,7 +8,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		<div class="tcp-container">
 			<div class="flex justify-between text-white">
 				<div class="max-w-[340px]">
-					<img src="<?php echo $logo_url ?>" alt="Albatros">
+					<img src="/wp-content/themes/oneonetwenty/assets/images/logo-white.png" alt="Albatros">
 					<p class="mt-4">© 2025 Albatros SPA</p>
 					<p>Sitio Web desarrollado por ABLA Factoría Creativa</p>
 					<a href="https://www.linkedin.com/company/albatrosspa/">Linkedin</a>
