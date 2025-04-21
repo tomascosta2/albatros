@@ -113,53 +113,30 @@ get_header(); ?>
 </section>
 <section>
 	<div class="tcp-container">
-		<h3 class="al-title --double-line --green mb-12"><span>Productos y Servicios</span></h3>
-		<!-- Duplicar con repeater y que se puedan cambiar los colores -->
-		<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
-			<div class="flex mb-2 gap-4 items-baseline">
-				<img class="size-[93px] object-fit bg-gray-200" src="" alt="">
-				<h2 class="text-white text-[60px] font-medium">Plan de ahorro estratégico</h2>
-			</div>
-			<p class="text-white text-[18px] leading-[20px] text-justify">
-				Nuestro Plan de Ahorro Estratégico identifica oportunidades de ahorro mediante un análisis profundo
-				de los costos de la empresa. Diseñamos e implementamos estrategias para optimizar recursos,
-				renegociar contratos y mejorar la rentabilidad. Trabajamos con empresas de gran tamaño, aplicando un
-				enfoque basado en datos y alta especialización. El resultado: mayor eficiencia financiera,
-				competitividad en el mercado y capacidad de reinversión para el crecimiento.
-			</p>
-		</div>
-		<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
-			<div class="flex mb-2 gap-4 items-baseline">
-				<img class="size-[93px] object-fit bg-gray-200" src="" alt="">
-				<h2 class="text-white text-[60px] font-medium">Plan de ahorro estratégico</h2>
-			</div>
-			<p class="text-white text-[18px] leading-[20px] text-justify">
-				Nuestro Plan de Ahorro Estratégico identifica oportunidades de ahorro mediante un análisis profundo
-				de los costos de la empresa. Diseñamos e implementamos estrategias para optimizar recursos,
-				renegociar contratos y mejorar la rentabilidad. Trabajamos con empresas de gran tamaño, aplicando un
-				enfoque basado en datos y alta especialización. El resultado: mayor eficiencia financiera,
-				competitividad en el mercado y capacidad de reinversión para el crecimiento.
-			</p>
-		</div>
-		<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
-			<div class="flex mb-2 gap-4 items-baseline">
-				<img class="size-[93px] object-fit bg-gray-200" src="" alt="">
-				<h2 class="text-white text-[60px] font-medium">Plan de ahorro estratégico</h2>
-			</div>
-			<p class="text-white text-[18px] leading-[20px] text-justify">
-				Nuestro Plan de Ahorro Estratégico identifica oportunidades de ahorro mediante un análisis profundo
-				de los costos de la empresa. Diseñamos e implementamos estrategias para optimizar recursos,
-				renegociar contratos y mejorar la rentabilidad. Trabajamos con empresas de gran tamaño, aplicando un
-				enfoque basado en datos y alta especialización. El resultado: mayor eficiencia financiera,
-				competitividad en el mercado y capacidad de reinversión para el crecimiento.
-			</p>
-		</div>
+		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['texto'] ?></span></h3>
+		<?php if (have_rows('planes')): ?>
+			<?php foreach (get_field('planes') as $plan): ?>
+				<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
+					<div class="flex mb-2 gap-4 items-baseline">
+						<?php if (!empty($plan['icono'])): ?>
+							<img class="size-[93px] object-fit bg-gray-200" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
+						<?php endif; ?>
+						<h2 class="text-white text-[60px] font-medium">
+							<?php echo esc_html($plan['titulo']); ?>
+						</h2>
+					</div>
+					<p class="text-white text-[18px] leading-[20px] text-justify">
+						<?php echo esc_html($plan['texto']); ?>
+					</p>
+				</div>
+			<?php endforeach; ?>
+		<?php endif; ?>
 	</div>
 </section>
 
 <section class="py-[80px]">
 	<div class="tcp-container">
-		<h3 class="al-title mb-12"><span>Estamos listos para atenderte</span></h3>
+		<h3 class="al-title mb-12"><span><?php echo $contacto_rapido_fields['titulo'] ?></span></h3>
 		<form action="/" class="bg-white shadow-[0px_0px_35px_#11111130] p-1 flex max-w-[617px] mx-auto rounded-lg">
 			<input class="outline-none p-4 w-full" placeholder="Introduce tu dirección de correo electrónico"
 				type="text">
@@ -173,46 +150,17 @@ get_header(); ?>
 		<div class="bg-white rounded-[20px] py-10 px-16 shadow-[0px_0px_35px_#11111130]">
 			<div class="swiper logo-swiper">
 				<div class="swiper-wrapper items-center">
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
-					<!-- Logo 1 -->
-					<div class="swiper-slide flex justify-center items-center">
-						<img class="bg-gray-200 h-[118px]" src="/ruta-a-tu-logo1.png" alt="Logo 1"
-							class="h-16 object-contain" />
-					</div>
+					<?php if (have_rows('lista_de_logos')): ?>
+						<?php foreach (get_field('lista_de_logos') as $item): ?>
+							<?php if (!empty($item['logo'])): ?>
+								<div class="swiper-slide flex justify-center items-center">
+									<img class="bg-gray-200 h-[118px] object-contain"
+										src="<?php echo esc_url($item['logo']['url']); ?>"
+										alt="<?php echo esc_attr($item['logo']['alt']); ?>" />
+								</div>
+							<?php endif; ?>
+						<?php endforeach; ?>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
