@@ -76,6 +76,7 @@ get_header(); ?>
 				preg_match('/^(\d+)(\D*)$/', $valor, $partes);
 				$numero = isset($partes[1]) ? $partes[1] : 0;
 				$extra = isset($partes[2]) ? $partes[2] : '';
+				echo "Extra ", $extra;
 			?>
 				<div class="shadow-xl p-8">
 					<p
