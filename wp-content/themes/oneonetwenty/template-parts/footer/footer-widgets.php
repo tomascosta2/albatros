@@ -14,7 +14,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 				clickable: true
 			},
 			autoplay: {
-				delay: 2000,
+				delay: 3000,
 				disableOnInteraction: false,
 			},
 			speed: 800

@@ -25,7 +25,7 @@ get_header(); ?>
 				$btn_title = esc_html($slide['boton']['title']);
 				$btn_url = esc_url($slide['boton']['url']);
 				?>
-				<div class="swiper-slide bg-[url('<?php echo $bg_url; ?>')] bg-cover bg-center flex items-center justify-center bg-gray-300">
+				<div class="swiper-slide bg-[url('<?php echo $bg_url; ?>')] hover:bg-[110%] transition-all bg-cover bg-center flex items-center justify-center bg-gray-300">
 					<div class="tcp-container">
 						<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
 							<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">
