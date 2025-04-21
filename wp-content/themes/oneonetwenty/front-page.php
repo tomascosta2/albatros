@@ -112,23 +112,21 @@ get_header(); ?>
 <section>
 	<div class="tcp-container">
 		<h3 class="al-title --double-line --green mb-12"><span><?php echo $servicios_fields['titulo'] ?></span></h3>
-		<?php if (have_rows($servicios_fields['planes'])): ?>
-			<?php foreach ($servicios_fields['planes'] as $plan): ?>
-				<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
-					<div class="flex mb-2 gap-4 items-baseline">
-						<?php if (!empty($plan['icono'])): ?>
-							<img class="size-[93px] object-fit bg-gray-200" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
-						<?php endif; ?>
-						<h2 class="text-white text-[60px] font-medium">
-							<?php echo esc_html($plan['titulo']); ?>
-						</h2>
-					</div>
-					<p class="text-white text-[18px] leading-[20px] text-justify">
-						<?php echo esc_html($plan['texto']); ?>
-					</p>
+		<?php foreach ($servicios_fields['planes'] as $plan): ?>
+			<div class="px-8 pt-12 pb-24 bg-[#060082] rounded-[40px] mb-8">
+				<div class="flex mb-2 gap-4 items-baseline">
+					<?php if (!empty($plan['icono'])): ?>
+						<img class="size-[93px] object-fit bg-gray-200" src="<?php echo esc_url($plan['icono']['url']); ?>" alt="<?php echo esc_attr($plan['icono']['alt']); ?>">
+					<?php endif; ?>
+					<h2 class="text-white text-[60px] font-medium">
+						<?php echo esc_html($plan['titulo']); ?>
+					</h2>
 				</div>
-			<?php endforeach; ?>
-		<?php endif; ?>
+				<p class="text-white text-[18px] leading-[20px] text-justify">
+					<?php echo esc_html($plan['texto']); ?>
+				</p>
+			</div>
+		<?php endforeach; ?>
 	</div>
 </section>
 
