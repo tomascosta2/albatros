@@ -141,8 +141,8 @@ get_header(); ?>
 <section class="py-[80px]">
 	<div class="tcp-container">
 		<h3 class="al-title mb-12"><span><?php echo $contacto_rapido_fields['titulo'] ?></span></h3>
-		<form action="/" class="bg-white shadow-[0px_0px_35px_#11111130] p-1 flex max-w-[617px] mx-auto rounded-lg">
-			<input class="outline-none p-4 w-full hover:scale-[103%] transition-all" placeholder="Introduce tu dirección de correo electrónico"
+		<form action="/" class="bg-white shadow-[0px_0px_35px_#11111130] hover:scale-[103%] transition-all p-1 flex max-w-[617px] mx-auto rounded-lg">
+			<input class="outline-none p-4 w-full" placeholder="Introduce tu dirección de correo electrónico"
 				type="text">
 			<button class="text-white font-semibold py-2 px-8 rounded-lg bg-[#4CAF4F]">Contáctanos</button>
 		</form>
