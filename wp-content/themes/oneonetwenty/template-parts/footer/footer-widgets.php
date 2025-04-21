@@ -234,21 +234,11 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		}
 
 		/* Botón de envío */
-		.wpcf7 input.submit-button {
-			background-color: #00BA88;
-			color: white;
-			font-weight: bold;
-			padding: 0.75rem 2rem;
-			border: none;
-			border-radius: 6px;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
+		
+		.wpcf7 .al-btn {
+			padding: 15px 70px;
 		}
 
-		.wpcf7 input.submit-button:hover {
-			background-color: #00a477;
-		}
-		
 	</style>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
