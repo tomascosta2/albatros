@@ -236,7 +236,7 @@ get_header(); ?>
 					?>
 					<div class="swiper-slide">
 						<div class="p-4 rounded-lg">
-							<div class="flex items-center gap-4">
+							<div class="flex flex-col md:flex-row items-center gap-4">
 								<?php if ($foto): ?>
 									<img class="size-[80px] rounded-full object-cover bg-[#54C4D2]"
 										src="<?php echo esc_url($foto['url']); ?>"
