@@ -28,7 +28,7 @@ get_header(); ?>
 				<div class="swiper-slide bg-[url('<?php echo $bg_url; ?>')] transition-all bg-cover bg-center flex items-center justify-center bg-gray-300">
 					<div class="tcp-container">
 						<div class="w-fit max-w-[457px] mt-[50px] ml-auto">
-							<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px]">
+							<h2 class="mb-2 text-[#060082] font-bold text-[64px] leading-[64px] fade-in-scroll">
 								<?php echo $titulo; ?>
 							</h2>
 							<a class="al-btn mt-4" href="<?php echo $btn_url; ?>"><?php echo $btn_title; ?></a>

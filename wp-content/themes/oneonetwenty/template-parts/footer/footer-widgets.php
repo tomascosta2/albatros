@@ -162,6 +162,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 			width: fit-content;
 			cursor: pointer;
 		}
+
 		.al-btn:hover {
 			scale: 105%;
 			transition: all 0.2s ease;
@@ -210,11 +211,41 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.al-title.--green::before {
 			background-color: #4CAF4F;
 		}
+
 		section:hover .al-title::before {
 			width: 100px;
 			height: 100px;
 			top: calc(50% - 50px);
 			left: -25px;
+		}
+
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.fade-in-scroll {
+			opacity: 0;
+			animation-name: fadeInUp;
+			animation-duration: 1s;
+			animation-timing-function: ease-out;
+			animation-delay: 0.3s;
+			animation-fill-mode: both;
+			animation-play-state: paused;
+		}
+
+		.fade-in-scroll:target,
+		.fade-in-scroll:focus-within,
+		.fade-in-scroll:active,
+		.fade-in-scroll:hover {
+			animation-play-state: running;
 		}
 
 		/* Slider Casos */
