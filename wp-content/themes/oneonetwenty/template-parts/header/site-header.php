@@ -1,4 +1,4 @@
-<?php 
+<?php
 $custom_logo_id = get_theme_mod('custom_logo');
 $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
 ?>
@@ -31,13 +31,17 @@ $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
 
 			<!-- Menú de navegación -->
 			<nav id="menu"
-				class="hidden z-50 flex-col gap-4 absolute top-[107px] left-0 w-full bg-white p-4 md:static md:top-0 flex md:flex md:flex-row md:items-center md:gap-4 md:w-auto">
-				<a class="text-[#060082]" href="#inicio">Inicio</a>
-				<a class="text-[#060082]" href="#nosotros">Nosotros</a>
-				<a class="text-[#060082]" href="#servicios">Productos y servicios</a>
-				<a class="text-[#060082]" href="#casosDeExito">Casos de éxito</a>
-				<a class="al-btn --secondary" href="#contacto">Contacto</a>
-				<a class="al-btn" href="https://tem.albatrosspa.com/login">Acceso Clientes</a>
+				class="hidden z-50 flex-col gap-4 absolute top-[107px] left-0 w-full bg-white p-4 md:static md:top-0 flex md:flex-row md:items-center md:gap-4 md:w-auto">
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'primary',
+					'container' => false,
+					'menu_class' => 'flex flex-col md:flex-row gap-4',
+					'link_before' => '<span class="text-[#060082]">',
+					'link_after' => '</span>',
+					'fallback_cb' => false,
+				));
+				?>
 			</nav>
 		</div>
 	</div>
