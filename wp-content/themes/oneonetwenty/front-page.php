@@ -130,9 +130,9 @@ get_header(); ?>
 						<?php echo esc_html($plan['titulo']); ?>
 					</h2>
 				</div>
-				<p class="text-[18px] leading-[20px] text-justify">
-					<?php echo esc_html($plan['texto']); ?>
-				</p>
+				<div class="text-[18px] leading-[20px] text-justify">
+					<?php echo $plan['texto']; ?>
+				</div>
 			</div>
 		<?php endforeach; ?>
 	</div>
