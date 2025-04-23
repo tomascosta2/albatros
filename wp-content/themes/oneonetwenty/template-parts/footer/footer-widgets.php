@@ -282,6 +282,15 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.wpcf7 .al-btn {
 			padding: 15px 70px;
 		}
+
+		/* Listas */
+		.RichTextList-bulleted {
+			list-style: disc;
+			list-style-position: inside;
+		}
+		.RichTextList-bulleted li {
+			margin-bottom: 16px;
+		}
 	</style>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
