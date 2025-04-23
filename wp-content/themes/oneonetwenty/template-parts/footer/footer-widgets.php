@@ -289,6 +289,8 @@ if (is_active_sidebar('sidebar-1')) : ?>
 			list-style-position: inside;
 		}
 		.RichTextList-bulleted li {
+			display: flex;
+			gap: 8px;
 			margin-bottom: 16px;
 		}
 	</style>
