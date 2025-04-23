@@ -31,7 +31,7 @@ $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
 
 			<!-- Menú de navegación -->
 			<nav id="menu"
-				class="hidden z-50 flex-col gap-4 absolute top-[107px] left-0 w-full bg-white p-4 md:static md:top-0 flex md:flex-row md:items-center md:gap-4 md:w-auto">
+				class="hidden z-50 flex-col gap-4 absolute top-[107px] left-0 w-full bg-white p-4 md:static md:top-0 flex md:flex md:flex-row md:items-center md:gap-4 md:w-auto">
 				<?php
 				wp_nav_menu(array(
 					'theme_location' => 'primary',
