@@ -156,7 +156,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.al-btn {
 			padding: 10px 23px;
 			border-radius: 4px;
-			color: white;
+			color: white !important;
 			background-color: #4CAF4F;
 			display: block;
 			width: fit-content;
