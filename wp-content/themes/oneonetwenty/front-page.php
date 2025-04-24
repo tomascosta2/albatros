@@ -266,7 +266,7 @@ get_header(); ?>
 
 <section class="pt-[80px] relative z-50" id="contacto">
 	<div class="tcp-container">
-		<h3 class="font-bold text-[#060082] text-center text-[64px]"><?php echo $contactanos_fields['titulo'] ?></h3>
+		<h3 class="font-bold text-[#060082] text-center text-[42px] md:text-[64px]"><?php echo $contactanos_fields['titulo'] ?></h3>
 	</div>
 	<div class="bg-[url(<?php echo $contactanos_fields['imagen_fondo']['url'] ?>)] bg-cover py-8 rounded-[40px]">
 		<div class="tcp-container">
