@@ -46,7 +46,7 @@ get_header(); ?>
 </section>
 <section id="nosotros">
 	<div class="tcp-container">
-		<div class="bg-[#060082] p-[60px] rounded-br-[40px] rounded-bl-[40px]">
+		<div class="bg-[#060082] py-[60px] px-[40px] md:p-[60px] rounded-br-[40px] rounded-bl-[40px]">
 			<div class="max-w-[800px] mx-auto flex flex-col md:flex-row items-baseline gap-12">
 				<div class="w-fit mx-auto">
 					<p class="md:mx-0 w-fit md:leading-[155px] text-white font-extrabold tracking-tighter leading-[120px] text-[146px] md:text-[190px]">
