@@ -286,6 +286,21 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		.wpcf7 .al-btn {
 			padding: 15px 70px;
 		}
+		.wpcf7-spinner {
+			display: none;
+			position: absolute;
+		}
+		form.submitting .wpcf7-spinner {
+			display: inline;
+		}
+		.wpcf7-not-valid-tip {
+			position: absolute;
+    		bottom: -53px;
+		}
+		.wpcf7-response-output {
+			max-width: 617px;
+    		margin: 50px auto 0;
+		}
 
 		/* Listas */
 		.RichTextList-bulleted {
