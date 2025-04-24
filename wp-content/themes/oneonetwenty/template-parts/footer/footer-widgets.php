@@ -299,7 +299,7 @@ if (is_active_sidebar('sidebar-1')) : ?>
 		}
 		.wpcf7-response-output {
 			max-width: 617px;
-    		margin: 50px auto 0;
+    		margin: 50px auto 0 !important;
 		}
 
 		/* Listas */
