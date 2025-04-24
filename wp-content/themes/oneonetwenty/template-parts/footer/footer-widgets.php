@@ -147,6 +147,10 @@ if (is_active_sidebar('sidebar-1')) : ?>
 			font-family: 'Plus Jakarta Sans Variable' !important;
 		}
 
+		.bgGreen {
+			background-color: #4CAF4F;
+		}
+
 		.tcp-container {
 			max-width: 1200px;
 			margin: 0 auto;
